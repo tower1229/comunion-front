@@ -1,0 +1,7 @@
+.startup-team-list .change {
+  visibility: hidden;
+}
+
+.startup-team-list:hover .change {
+  visibility: visible;
+}

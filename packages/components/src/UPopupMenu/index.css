@@ -1,0 +1,5 @@
+.u-popup-menu {
+  &.n-dropdown-menu {
+    @apply bg-white !rounded-4 !px-4 !py-8;
+  }
+}

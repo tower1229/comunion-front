@@ -1,0 +1,28 @@
+.undefined-underline-reveal {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  transform: perspective(1px) translateZ(0);
+  cursor: pointer;
+}
+
+.undefined-underline-reveal::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 4px;
+  background: #5e18fe;
+  transform: translateY(4px);
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  content: '';
+}
+
+.undefined-underline-reveal:hover::before,
+.undefined-underline-reveal:focus::before,
+.undefined-underline-reveal:active::before {
+  transform: translateY(1px);
+}

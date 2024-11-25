@@ -1,0 +1,33 @@
+{
+  "name": "@comunion/utils",
+  "version": "0.0.1",
+  "description": "Utility functions",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist",
+  "scripts": {
+    "build": "tsup --dts --format cjs,esm --clean src",
+    "dev": "tsup --dts --format cjs,esm --clean --watch src",
+    "test": "jest"
+  },
+  "repository": "comunion-io/front-next.git",
+  "keywords": [
+    "typescript",
+    "utils"
+  ],
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comunion-io/front-next/issues"
+  },
+  "homepage": "https://github.com/comunion-io/front-next#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "tsup": "^4.12.0"
+  }
+}

@@ -1,0 +1,7 @@
+.list-hover:hover {
+  @apply bg-color-hover;
+}
+
+.list-hover:hover > .hidden {
+  display: flex;
+}

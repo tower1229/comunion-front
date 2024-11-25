@@ -1,0 +1,31 @@
+.u-drawer {
+  .n-drawer-content-wrapper {
+    @apply !h-screen flex flex-col;
+  }
+
+  &-header {
+    @apply bg-white h-20 flex items-center pl-6 pr-8 flex-shrink-0;
+
+    box-shadow: 0 2px 4px rgb(23 39 51 / 11%);
+
+    &__title {
+      @apply u-card-title2 text-primary1 font-primary font-semibold text-[16px];
+    }
+
+    &__close {
+      @apply ml-auto w-5 h-5 cursor-pointer text-primary;
+    }
+  }
+
+  &-container {
+    @apply p-6 bg-purple flex-1 overflow-hidden;
+  }
+
+  &-content {
+    @apply h-full overflow-y-auto;
+  }
+}
+
+.n-drawer-mask {
+  background-color: rgb(51 51 51 / 75%);
+}

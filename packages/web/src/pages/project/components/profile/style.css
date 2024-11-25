@@ -1,0 +1,11 @@
+.custom-popover-menu-item {
+  min-width: 60px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-popover-menu-item:hover {
+  color: #5331f4;
+  background: #5e18fe1a;
+}

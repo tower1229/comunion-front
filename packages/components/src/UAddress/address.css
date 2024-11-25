@@ -1,0 +1,19 @@
+.u-address {
+  @apply flex text-primary items-center;
+
+  &__text {
+    @apply cursor-default flex-1 truncate;
+  }
+
+  &__link {
+    @apply flex-1 transition-all truncate hover:opacity-80;
+  }
+
+  &__copy {
+    @apply cursor-pointer leading-none ml-2;
+  }
+
+  &__icon {
+    outline: none;
+  }
+}

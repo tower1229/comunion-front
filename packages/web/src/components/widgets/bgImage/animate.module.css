@@ -1,0 +1,32 @@
+@keyframes shink-face {
+  0% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.bgImage {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  background-color: #5331f4;
+  background-image: url('../../../assets/20220725/indexBgImage.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.lineColor {
+  animation: shink-face 1s linear infinite;
+}
+@media (max-width: 767.9px) {
+  .bgImage {
+    height: 45vh;
+  }
+}

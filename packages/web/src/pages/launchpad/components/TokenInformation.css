@@ -1,0 +1,21 @@
+.token-info-item {
+  @apply flex mb-4 items-center justify-between;
+
+  .token-info-item-label {
+    @apply text-color1 u-h6;
+  }
+
+  .token-info-item-label-right {
+    @apply text-right text-color2 u-h6;
+  }
+
+  .token-info-item-address.u-address {
+    .u-address__link {
+      @apply mr-2.5 text-sm u-h6;
+    }
+
+    .u-address__copy {
+      @apply scale-75;
+    }
+  }
+}

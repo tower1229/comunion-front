@@ -1,0 +1,7 @@
+.menu-wrapper .n-menu-item-content-header p {
+  @apply u-h5;
+}
+
+.menu-wrapper .n-menu-item-content--selected .n-menu-item-content-header p {
+  color: #5331f4;
+}

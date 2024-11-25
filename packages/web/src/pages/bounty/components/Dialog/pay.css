@@ -1,0 +1,9 @@
+.pay-bounty-panel .n-card__content .u-form-factory_item:nth-child(even) {
+  margin-top: -30px;
+}
+
+.pay_dialog_token2_amount_form_item {
+  grid-template-areas:
+    'blank'
+    'feedback' !important;
+}

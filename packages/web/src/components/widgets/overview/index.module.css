@@ -1,0 +1,31 @@
+.title36 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.title30 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  @apply <sm:text-[22px] <sm:leading-9;
+}
+
+.title26 {
+  font-weight: 700;
+  font-size: 1.625rem;
+  @apply <sm:text-[14px] <sm:leading-6;
+}
+
+.title24 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  @apply <sm:text-[16px] <sm:leading-5;
+}
+
+.title20 {
+  font-size: 1.25rem;
+  @apply <sm:text-[12px] <sm:leading-5;
+}
+
+.title14 {
+  font-size: 0.875rem;
+}

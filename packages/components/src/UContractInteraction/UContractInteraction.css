@@ -1,0 +1,89 @@
+@keyframes u-contract-interaction-pending-left {
+  0% {
+    @apply z-10;
+  }
+
+  25% {
+    @apply z-10;
+
+    transform: translateX(-48px) scale(0.9);
+  }
+
+  50% {
+    @apply z-20;
+  }
+
+  75% {
+    @apply z-20;
+
+    transform: translateX(48px) scale(0.9);
+  }
+
+  100% {
+    @apply z-10;
+  }
+}
+@keyframes u-contract-interaction-pending-right {
+  0% {
+    @apply z-20;
+  }
+
+  25% {
+    @apply z-20;
+
+    transform: translateX(48px) scale(0.9);
+  }
+
+  50% {
+    @apply z-10;
+  }
+
+  75% {
+    @apply z-10;
+
+    transform: translateX(-48px) scale(0.9);
+  }
+
+  100% {
+    @apply z-20;
+  }
+}
+
+.u-contract-interaction {
+  @apply bg-white rounded-sm flex flex-col min-h-60 py-12 px-16 w-100 relative items-center;
+
+  &-close {
+    @apply cursor-pointer h-5 top-4 right-4 w-5 z-10 absolute;
+  }
+
+  &-animation {
+    @apply h-8 relative;
+
+    &::before,
+    &::after {
+      transition: all 0.3s linear;
+      content: '';
+      @apply rounded-full h-8 -ml-4 top-0 left-1/2 w-8 absolute;
+    }
+
+    &::before {
+      @apply bg-error;
+
+      animation: u-contract-interaction-pending-left 1.2s linear infinite;
+    }
+
+    &::after {
+      @apply bg-warning;
+
+      animation: u-contract-interaction-pending-right 1.2s linear infinite;
+    }
+  }
+
+  &-status {
+    @apply mt-8 text-color1 u-title1;
+  }
+
+  &-text {
+    @apply mt-6 text-center text-color3 u-caption;
+  }
+}

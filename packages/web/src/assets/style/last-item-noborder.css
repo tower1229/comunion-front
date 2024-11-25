@@ -1,0 +1,4 @@
+.last-item-noborder ._item:last-child .border-b,
+.last-item-noborder ._item:last-child .border-b-1 {
+  border: 0;
+}

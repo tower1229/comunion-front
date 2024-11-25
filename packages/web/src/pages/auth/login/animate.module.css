@@ -1,0 +1,17 @@
+@keyframes bg-animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 9000% 0;
+  }
+}
+
+.bgImage {
+  background-color: #5331f4;
+  background-image: url('./assets/indexBgImage.png');
+  background-position: 0 0;
+  background-size: 1024px 600px;
+  animation: bg-animate 850s linear infinite;
+}

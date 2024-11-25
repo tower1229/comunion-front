@@ -1,0 +1,17 @@
+.u-steps {
+  .u-splitor {
+    @apply flex-1 h-0.5 bg-grey5 mt-3;
+
+    &.has-pass {
+      @apply bg-primary;
+    }
+  }
+
+  .u-step {
+    @apply flex flex-col items-center relative;
+
+    .u-step-title {
+      @apply absolute top-8;
+    }
+  }
+}

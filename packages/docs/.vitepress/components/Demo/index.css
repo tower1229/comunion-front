@@ -1,0 +1,73 @@
+.__demo {
+  --border-color: #ebedf1;
+  --text-color: #454d64;
+
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 1px;
+
+  &-preview {
+    padding: 40px 24px;
+  }
+
+  &-error {
+    padding: 40px 24px;
+    color: #f90;
+  }
+
+  &-desc {
+    position: relative;
+    padding: 1.2em 1em 1em;
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+  }
+
+  &-title {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    margin-left: -4px;
+    padding: 0 4px;
+    color: var(--text-color);
+    font-size: inherit;
+    font-weight: 500;
+    background: linear-gradient(0deg, #fff, #fff 50%, hsla(0, 0%, 100%, 0)) 100%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  &-markdown {
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 1.60625;
+  }
+
+  &-actions {
+    display: flex;
+    height: 40px;
+    padding: 0 1em;
+    align-items: center;
+    border-top: 1px dashed var(--border-color);
+    color: #888;
+
+    & svg {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--c-brand);
+      }
+    }
+  }
+
+  &-copy {
+    margin-left: auto;
+    margin-right: 8px;
+  }
+
+  &-code {
+    margin: 0 !important;
+    padding: 1em;
+    border-top: 1px dashed var(--border-color);
+  }
+}

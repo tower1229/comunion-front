@@ -1,0 +1,9 @@
+.deposit-form {
+  .n-form-item.n-form-item--top-labelled {
+    @apply grid-rows-none;
+
+    .n-form-item-feedback-wrapper {
+      display: none;
+    }
+  }
+}

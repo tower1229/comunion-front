@@ -1,0 +1,11 @@
+.input-big-number {
+  &.n-input.n-input--disabled .n-input__border {
+    border-color: #e5e7eb;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    margin: 0;
+    appearance: none;
+  }
+}

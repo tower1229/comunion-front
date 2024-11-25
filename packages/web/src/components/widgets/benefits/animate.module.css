@@ -1,0 +1,12 @@
+.undefined-grow {
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.undefined-grow:hover,
+.undefined-grow:focus,
+.undefined-grow:active {
+  transform: scale(1.1);
+}

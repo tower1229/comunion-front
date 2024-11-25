@@ -1,0 +1,8 @@
+.__futureItem ._border {
+  border-color: #666;
+}
+
+.__futureItem:hover ._border {
+  background: #fff;
+  border-color: #5331f4;
+}

@@ -1,0 +1,26 @@
+.hoverBox {
+  color: #111;
+  border: 1px solid rgb(102 102 102 / 40%);
+}
+
+.hoverBox:nth-child(1) {
+  @media (min-width: 768px) {
+    border-right-width: 0;
+    border-bottom-width: 0;
+  }
+}
+
+.hoverBox:nth-child(2) {
+  @media (min-width: 768px) {
+    border-bottom-width: 0;
+  }
+}
+
+.hoverBox:nth-child(3) {
+  @media (min-width: 768px) {
+    border-right-width: 0;
+  }
+  @media (max-width: 640px) {
+    border-bottom-width: 0;
+  }
+}

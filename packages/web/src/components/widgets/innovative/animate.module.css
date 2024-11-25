@@ -1,0 +1,35 @@
+.undefined-float-shadow {
+  position: relative;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.undefined-float-shadow::before {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  z-index: -1;
+  width: 90%;
+  height: 10px;
+  background: radial-gradient(ellipse at center, rgb(0 0 0 / 35%) 0%, rgb(0 0 0 / 0%) 80%);
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+  content: '';
+  pointer-events: none;
+}
+
+.undefined-float-shadow:hover,
+.undefined-float-shadow:focus,
+.undefined-float-shadow:active {
+  transform: translateY(-5px);
+}
+
+.undefined-float-shadow:hover::before,
+.undefined-float-shadow:focus::before,
+.undefined-float-shadow:active::before {
+  transform: translateY(5px);
+  opacity: 1;
+}

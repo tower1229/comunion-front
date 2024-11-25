@@ -1,0 +1,55 @@
+.profilePage {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url('./assets/b1.png') no-repeat #e5e5e5;
+  background-size: 100% auto;
+}
+
+.profilePage::after {
+  position: absolute;
+  top: 90vmin;
+  right: 0;
+  width: 100px;
+  height: 200px;
+  background: url('./assets/b2.png') right center no-repeat;
+  background-size: contain;
+  content: '';
+}
+
+/* dlList */
+.dlList {
+  overflow: hidden;
+}
+
+.dlList dt {
+  position: relative;
+  float: left;
+  clear: left;
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.dlList dt::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 12px;
+  margin-top: -6px;
+  border-right: 1px solid #e5e5e5;
+  content: '';
+}
+
+/* showItem */
+.showList li {
+  position: relative;
+  height: 108px;
+  margin-top: -1px;
+  padding: 0 24px;
+  background: #ededf2;
+  border: 1px solid #dadce0;
+}
+
+.showList li:hover {
+  background: #fff;
+}

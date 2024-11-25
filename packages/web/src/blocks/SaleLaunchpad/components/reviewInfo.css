@@ -1,0 +1,11 @@
+.review-info {
+  @apply mx-12.5 text-sm;
+
+  .review-info-item {
+    @apply flex items-center mb-6;
+  }
+
+  .title {
+    @apply u-h5 text-grey3 mr-2;
+  }
+}

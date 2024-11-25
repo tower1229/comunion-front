@@ -1,0 +1,29 @@
+{
+  "name": "@comunion/docs",
+  "version": "0.0.1",
+  "description": "Comunion Frontend Docs",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@comunion/components": "^0.0.1",
+    "@types/marked": "^4.0.2",
+    "@types/prismjs": "^1.26.0",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "postcss-nested": "^5.0.6",
+    "vite-plugin-windicss": "^1.9.0",
+    "vitepress": "^1.0.0-alpha.20",
+    "windicss": "^3.5.6"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:serve": "vitepress serve"
+  },
+  "dependencies": {
+    "codesandbox": "^2.2.3",
+    "highlight.js": "^11.4.0",
+    "marked": "^4.0.12",
+    "prismjs": "^1.27.0"
+  }
+}

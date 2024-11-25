@@ -1,0 +1,17 @@
+.cardBorder {
+  @apply h-1;
+
+  background: var(--u-purple-gradient-color);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.team_members {
+  @apply py-3 px-6 w-full absolute bottom-3 flex;
+}
+
+.members_svg {
+  @apply w-7 h-7 bg-gray-50;
+
+  border-radius: 50%;
+}

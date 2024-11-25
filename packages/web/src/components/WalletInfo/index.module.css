@@ -1,0 +1,12 @@
+.connectedDot,
+.unconnectedDot {
+  @apply mr-2 w-2 h-2 rounded-full;
+}
+
+.connectedDot {
+  background: var(--u-success-color);
+}
+
+.unconnectedDot {
+  background: var(--u-grey-5-color);
+}

@@ -1,0 +1,13 @@
+.u-scroll-list {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.u-scroll-list::-webkit-scrollbar-thumb {
+  background-color: rgb(0 0 0 / 0%);
+}
+
+.u-scroll-list:hover::-webkit-scrollbar-thumb {
+  background-color: #5331f4;
+}

@@ -1,0 +1,20 @@
+@import '@comunion/components/dist/es/index.css';
+
+/* TODO leading-5 is not working */
+body {
+  @apply font-primary text-color2 break-words;
+}
+
+::-webkit-scrollbar {
+  @apply h-1 w-1;
+
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded h-1 w-1;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}

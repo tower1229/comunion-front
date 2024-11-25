@@ -1,0 +1,5 @@
+.governance-setting {
+  .n-form-item .n-form-item-feedback-wrapper {
+    min-height: unset;
+  }
+}

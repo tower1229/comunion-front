@@ -1,0 +1,5 @@
+.srollList {
+  &::-webkit-scrollbar-thumb {
+    background-color: none;
+  }
+}

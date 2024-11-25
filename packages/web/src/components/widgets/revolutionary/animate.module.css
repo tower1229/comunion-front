@@ -1,0 +1,84 @@
+.undefined-shutter-in-vertical {
+  position: relative;
+  background: #fff;
+
+  /* box-shadow: 0 0 1px rgb(0 0 0 / 0%); */
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.1s;
+  transition-property: color;
+}
+
+.undefined-shutter-in-vertical::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #e5e5e5;
+  transform: scaleY(1);
+  transform-origin: 50%;
+  transition-timing-function: ease-out;
+  transition-duration: 0.1s;
+  transition-property: transform;
+  content: '';
+}
+
+.undefined-shutter-in-vertical:hover,
+.undefined-shutter-in-vertical:focus,
+.undefined-shutter-in-vertical:active {
+  color: white;
+}
+
+.undefined-shutter-in-vertical:hover::before,
+.undefined-shutter-in-vertical:focus::before,
+.undefined-shutter-in-vertical:active::before {
+  transform: scaleY(0);
+}
+
+.undefined-border-fade {
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  box-shadow: inset 0 0 0 1px #666, 0 0 1px rgb(0 0 0 / 0%);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+
+.undefined-border-fade:hover,
+.undefined-border-fade:focus,
+.undefined-border-fade:active {
+  box-shadow: inset 0 0 0 1px rgb(94 24 254 / 40%), 0 0 1px rgb(0 0 0 / 0%);
+}
+
+/* Back Pulse */
+@keyframes undefined-back-pulse {
+  50% {
+    background-color: rgb(255 255 255 / 75%);
+  }
+}
+@keyframes undefined-back-pulse {
+  50% {
+    background-color: rgb(255 255 255 / 75%);
+  }
+}
+
+.undefined-back-pulse {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: color, background-color;
+}
+
+.undefined-back-pulse:hover,
+.undefined-back-pulse:focus,
+.undefined-back-pulse:active {
+  background-color: white;
+  animation-name: undefined-back-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
