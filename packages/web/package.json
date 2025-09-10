@@ -67,7 +67,7 @@
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "postcss-nested": "^5.0.6",
     "typescript": "^5.0.4",
-    "vite": "^4.4.4",
+    "vite": "^5.4.20",
     "vite-plugin-pages": "^0.31.0",
     "vite-plugin-vue-layouts": "^0.8.0",
     "vite-plugin-windicss": "^1.9.0",
